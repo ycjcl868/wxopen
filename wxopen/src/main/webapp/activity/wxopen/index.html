@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微信测试</title>
+  <meta name="description" content="微信测试" />
+  <meta name="keywords" content="微信测试" />   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+  <script type="text/javascript" src="../../common/jquery/zepto.min.js"></script>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" ></script>
+  <script type="text/javascript" src="../../common/weixin/wxopen-1.0.0.js"></script>
+  <script type="text/javascript" src="../../common/ai/base.ai.comm.js"></script>
+  <script type="text/javascript">
+  	var ACT = AI_BASE;
+	wxopen.initOAuth2({
+		appid:"",
+  		redirectUri: ACT.location() + "activity/wxopen/wx.html",
+  		scope:"snsapi_userinfo",
+  		state:"STATE",
+  		defaultUri:window.location.href
+ 	});
+  </script>
+</body>
+</html>
